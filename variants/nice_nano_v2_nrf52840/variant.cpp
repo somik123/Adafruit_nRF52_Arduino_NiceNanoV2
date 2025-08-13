@@ -25,54 +25,38 @@
 
 const uint32_t g_ADigitalPinMap[] =
     {
-   0,  // P0.00
-   1,  // P0.01
-   2,  // P0.02 (D19, A0)
-   3,  // P0.03
-   4,  // P0.04
-   5,  // P0.05
-   6,  // P0.06 (D0, TX)
-   7,  // P0.07
-   8,  // P0.08 (D1, RX)
-   9,  // P0.09 (D10)
-  10,  // P0.10 (D16)
-  11,  // P0.11 (D7)
-  12,  // P0.12
-  13,  // P0.13 (EXT_VCC)
-  14,  // P0.14
-  15,  // P0.15 (D17, LED_BUILTIN)
-  16,  // P0.16
-  17,  // P0.17 (D2, SDA)
-  18,  // P0.18
-  19,  // P0.19
-  20,  // P0.20 (D3, SCL)
-  21,  // P0.21
-  22,  // P0.22 (D4, SCLK)
-  23,  // P0.23
-  24,  // P0.24 (D5, MISO)
-  25,  // P0.25
-  26,  // P0.26
-  27,  // P0.27
-  28,  // P0.28
-  29,  // P0.29 (D20, A1)
-  30,  // P0.30
-  31,  // P0.31 (D21,A2)
-  32,  // P1.00 (D6, MOSI)
-  33,  // P1.01 (D11)
-  34,  // P1.02 (D12)
-  35,  // P1.03
-  36,  // P1.04 (D8)
-  37,  // P1.05
-  38,  // P1.06 (D9)
-  39,  // P1.07 (D13)
-  40,  // P1.08
-  41,  // P1.09
-  42,  // P1.10
-  43,  // P1.11 (D14)
-  44,  // P1.12
-  45,  // P1.13 (D15)
-  46,  // P1.14
-  47,  // P1.15
+        // D0 - D9 (left side, top to bottom)
+        8,  // D0 is P0.08 (D1, RX)
+        6,  // D1 is P0.06 (D0, TX)
+        17, // D2 is P0.17 (D2, SDA)
+        20, // D3 is P0.20 (D3, SCL)
+        22, // D4 is P0.22 (D4, SCLK)
+        24, // D5 is P0.24 (D5, MISO)
+        32, // D6 is P1.00 (D6, MOSI)
+        11, // D7 is P0.11 (D7)
+        36, // D8 is P1.04 (D8)
+        38, // D9 is P1.06 (D9)
+
+        // D10 (right side, bottom to top)
+        9,  // D10 is P0.09 (D10)
+
+        // D11 - D13 (extra center pins, left to right)
+        33, // D11 is P1.01 (D11)
+        34, // D12 is P1.02 (D12)
+        39, // D13 is P1.07 (D13)
+
+        // D14 - D21 (right side, bottom to top)
+        43, // D14 is P1.11 (D14)
+        45, // D15 is P1.13 (D15)
+        10, // D16 is P0.10 (D16)
+        15, // LED_BUILTIN is P0.15 (Internal LED)
+        47, // D18 is P1.15
+        2,  // D19 is P0.02 (A0)
+        29, // D20 is P0.29 (A1)
+        31, // D21 is P0.31 (A2)
+        
+        // EXT_VCC
+        13, // EXT_VCC is P0.13 (EXT_VCC) [active high]
 };
 
 void initVariant()
