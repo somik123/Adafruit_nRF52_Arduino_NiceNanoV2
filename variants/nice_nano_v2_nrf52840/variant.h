@@ -96,7 +96,7 @@ extern "C"
 #define D14 (14ul) // P1.11
 #define D15 (15ul) // P1.13
 #define D16 (16ul) // P0.10
-#define D17 (17ul) // P0.25 (Internal LED)
+#define D17 (17ul) // P0.15 (Internal LED)
 #define D18 (18ul) // P1.15
 #define D19 (19ul) // P0.02 (A0)
 #define D20 (20ul) // P0.29 (A1)
