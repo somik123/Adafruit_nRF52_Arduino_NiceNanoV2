@@ -7,68 +7,68 @@ menu.debug_output=Debug Port
 # -----------------------------------
 
 # -----------------------------------
-# Nice! Nano v2 nRF52840
+# Pro Micro nRF52840
 # -----------------------------------
-nicenanov2n52840.name=Nice Nano v2 nRF52840
+promicronrf52840.name=Pro Micro nRF52840
 
 # VID/PID for Bootloader, Arduino & CircuitPython
-nicenanov2n52840.vid.0=0x239A
-nicenanov2n52840.pid.0=0x8029
-nicenanov2n52840.vid.1=0x239A
-nicenanov2n52840.pid.1=0x0029
-nicenanov2n52840.vid.2=0x239A
-nicenanov2n52840.pid.2=0x002A
-nicenanov2n52840.vid.3=0x239A
-nicenanov2n52840.pid.3=0x802A
+promicronrf52840.vid.0=0x239A
+promicronrf52840.pid.0=0x8029
+promicronrf52840.vid.1=0x239A
+promicronrf52840.pid.1=0x0029
+promicronrf52840.vid.2=0x239A
+promicronrf52840.pid.2=0x002A
+promicronrf52840.vid.3=0x239A
+promicronrf52840.pid.3=0x802A
 
 # Upload
-nicenanov2n52840.bootloader.tool=bootburn
-nicenanov2n52840.upload.tool=nrfutil
-nicenanov2n52840.upload.protocol=nrfutil
-nicenanov2n52840.upload.use_1200bps_touch=true
-nicenanov2n52840.upload.wait_for_upload_port=true
-nicenanov2n52840.upload.maximum_size=815104
-nicenanov2n52840.upload.maximum_data_size=237568
+promicronrf52840.bootloader.tool=bootburn
+promicronrf52840.upload.tool=nrfutil
+promicronrf52840.upload.protocol=nrfutil
+promicronrf52840.upload.use_1200bps_touch=true
+promicronrf52840.upload.wait_for_upload_port=true
+promicronrf52840.upload.maximum_size=815104
+promicronrf52840.upload.maximum_data_size=237568
 
 # Build
-nicenanov2n52840.build.mcu=cortex-m4
-nicenanov2n52840.build.f_cpu=64000000
-nicenanov2n52840.build.board=NRF52840_FEATHER
-nicenanov2n52840.build.core=nRF5
-nicenanov2n52840.build.variant=nice_nano_v2_nrf52840
-nicenanov2n52840.build.usb_manufacturer="Adafruit"
-nicenanov2n52840.build.usb_product="Feather nRF52840 Express"
-nicenanov2n52840.build.extra_flags=-DNRF52840_XXAA {build.flags.usb}
-nicenanov2n52840.build.ldscript=nrf52840_s140_v6.ld
-nicenanov2n52840.build.openocdscript=scripts/openocd/daplink_nrf52.cfg
-nicenanov2n52840.build.vid=0x239A
-nicenanov2n52840.build.pid=0x8029
-nicenanov2n52840.build.uf2_family=0xADA52840
+promicronrf52840.build.mcu=cortex-m4
+promicronrf52840.build.f_cpu=64000000
+promicronrf52840.build.board=NRF52840_FEATHER
+promicronrf52840.build.core=nRF5
+promicronrf52840.build.variant=pro_micro_nrf52840
+promicronrf52840.build.usb_manufacturer="Adafruit"
+promicronrf52840.build.usb_product="Feather nRF52840 Express"
+promicronrf52840.build.extra_flags=-DNRF52840_XXAA {build.flags.usb}
+promicronrf52840.build.ldscript=nrf52840_s140_v6.ld
+promicronrf52840.build.openocdscript=scripts/openocd/daplink_nrf52.cfg
+promicronrf52840.build.vid=0x239A
+promicronrf52840.build.pid=0x8029
+promicronrf52840.build.uf2_family=0xADA52840
 
 # Menu: SoftDevice
-nicenanov2n52840.menu.softdevice.s140v6=S140 6.1.1
-nicenanov2n52840.menu.softdevice.s140v6.build.sd_name=s140
-nicenanov2n52840.menu.softdevice.s140v6.build.sd_version=6.1.1
-nicenanov2n52840.menu.softdevice.s140v6.build.sd_fwid=0x00B6
+promicronrf52840.menu.softdevice.s140v6=S140 6.1.1
+promicronrf52840.menu.softdevice.s140v6.build.sd_name=s140
+promicronrf52840.menu.softdevice.s140v6.build.sd_version=6.1.1
+promicronrf52840.menu.softdevice.s140v6.build.sd_fwid=0x00B6
 
 # Menu: Debug Level
-nicenanov2n52840.menu.debug.l0=Level 0 (Release)
-nicenanov2n52840.menu.debug.l0.build.debug_flags=-DCFG_DEBUG=0
-nicenanov2n52840.menu.debug.l1=Level 1 (Error Message)
-nicenanov2n52840.menu.debug.l1.build.debug_flags=-DCFG_DEBUG=1
-nicenanov2n52840.menu.debug.l2=Level 2 (Full Debug)
-nicenanov2n52840.menu.debug.l2.build.debug_flags=-DCFG_DEBUG=2
-nicenanov2n52840.menu.debug.l3=Level 3 (Segger SystemView)
-nicenanov2n52840.menu.debug.l3.build.debug_flags=-DCFG_DEBUG=3
-nicenanov2n52840.menu.debug.l3.build.sysview_flags=-DCFG_SYSVIEW=1
+promicronrf52840.menu.debug.l0=Level 0 (Release)
+promicronrf52840.menu.debug.l0.build.debug_flags=-DCFG_DEBUG=0
+promicronrf52840.menu.debug.l1=Level 1 (Error Message)
+promicronrf52840.menu.debug.l1.build.debug_flags=-DCFG_DEBUG=1
+promicronrf52840.menu.debug.l2=Level 2 (Full Debug)
+promicronrf52840.menu.debug.l2.build.debug_flags=-DCFG_DEBUG=2
+promicronrf52840.menu.debug.l3=Level 3 (Segger SystemView)
+promicronrf52840.menu.debug.l3.build.debug_flags=-DCFG_DEBUG=3
+promicronrf52840.menu.debug.l3.build.sysview_flags=-DCFG_SYSVIEW=1
 
 # Menu: Debug Port
-nicenanov2n52840.menu.debug_output.serial=Serial
-nicenanov2n52840.menu.debug_output.serial.build.logger_flags=-DCFG_LOGGER=0
-nicenanov2n52840.menu.debug_output.serial1=Serial1
-nicenanov2n52840.menu.debug_output.serial1.build.logger_flags=-DCFG_LOGGER=1 -DCFG_TUSB_DEBUG=CFG_DEBUG
-nicenanov2n52840.menu.debug_output.rtt=Segger RTT
-nicenanov2n52840.menu.debug_output.rtt.build.logger_flags=-DCFG_LOGGER=2 -DCFG_TUSB_DEBUG=CFG_DEBUG -DSEGGER_RTT_MODE_DEFAULT=SEGGER_RTT_MODE_BLOCK_IF_FIFO_FULL
+promicronrf52840.menu.debug_output.serial=Serial
+promicronrf52840.menu.debug_output.serial.build.logger_flags=-DCFG_LOGGER=0
+promicronrf52840.menu.debug_output.serial1=Serial1
+promicronrf52840.menu.debug_output.serial1.build.logger_flags=-DCFG_LOGGER=1 -DCFG_TUSB_DEBUG=CFG_DEBUG
+promicronrf52840.menu.debug_output.rtt=Segger RTT
+promicronrf52840.menu.debug_output.rtt.build.logger_flags=-DCFG_LOGGER=2 -DCFG_TUSB_DEBUG=CFG_DEBUG -DSEGGER_RTT_MODE_DEFAULT=SEGGER_RTT_MODE_BLOCK_IF_FIFO_FULL
 
 # -----------------------------------
 # COPY UNTIL HERE

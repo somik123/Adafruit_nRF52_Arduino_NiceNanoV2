@@ -19,7 +19,7 @@
           "size": "20955171",
           "boards": [
             {
-              "name": "Nice Nano v2 nRF52840"
+              "name": "Pro Micro nRF52840"
             },
             {
               "name": "Adafruit Feather nRF52832"

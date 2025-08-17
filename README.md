@@ -1,10 +1,10 @@
-# Adafruit_nRF52_Arduino_NiceNanoV2
-Adafruit addon for SuperMini nRF52840 / Nice! Nano v2 nRF52840
+# Adafruit_nRF52_Arduino_ProMicro
+Adafruit addon for Pro Micro nRF52840 & SuperMini nRF52840
 
 
 ## Pinouts
 
-![SuperMini nRF52840 and nice!Nano v2 pinout](https://raw.githubusercontent.com/somik123/Adafruit_nRF52_Arduino_NiceNanoV2/refs/heads/main/img/nicenano-v2-pinout.png)
+![Pro Micro nRF52840 pinout](https://raw.githubusercontent.com/somik123/Adafruit_nRF52_Arduino_ProMicro/refs/heads/main/img/pro-micro-nRF52840-pinout.png)
 
 ## Installation
 
@@ -16,25 +16,25 @@ Adafruit addon for SuperMini nRF52840 / Nice! Nano v2 nRF52840
 1. Copy paste lines 21 to 23 from `installed.json` in the repo into the top of `"boards":` inside the `installed.json` file on your computer:
     ```
                 {
-                  "name": "Nice Nano v2 nRF52840"
+                "name": "Pro Micro nRF52840"
                 },
     ```
     > **Note:** The installed.json is taken from 1.7.0 and may need modifications if your version is greatly different.
 1. Copy paste lines 9 to 71 from `boards.txt` into the top of the `boards.txt` file, usually right after `menu.debug_output=Debug Port`:
     ```
     # -----------------------------------
-    # Nice! Nano v2 nRF52840
+    # Pro Micro nRF52840
     # -----------------------------------
-    nicenanov2n52840.name=Nice Nano v2 nRF52840
+    promicronrf52840.name=Pro Micro nRF52840
     ...
     ...
     ...
-    nicenanov2n52840.menu.debug_output.rtt.build.logger_flags=-DCFG_LOGGER=2 -DCFG_TUSB_DEBUG=CFG_DEBUG -DSEGGER_RTT_MODE_DEFAULT=SEGGER_RTT_MODE_BLOCK_IF_FIFO_FULL
+    promicronrf52840.menu.debug_output.rtt.build.logger_flags=-DCFG_LOGGER=2 -DCFG_TUSB_DEBUG=CFG_DEBUG -DSEGGER_RTT_MODE_DEFAULT=SEGGER_RTT_MODE_BLOCK_IF_FIFO_FULL
     ```
     > **Note:** The boards.txt is taken from 1.7.0 and may need modifications if your version is greatly different.
 
 1. Open the latest version directory.
-1. Open `variants` directory. Copy the `nice_nano_v2_nrf52840` directory inside `varients` into that directory.
+1. Open `variants` directory. Copy the `pro_micro_nrf52840` directory inside `varients` into that directory.
 
 
 # Pinout
@@ -67,5 +67,5 @@ Adafruit addon for SuperMini nRF52840 / Nice! Nano v2 nRF52840
 
 
 # Schematics
-![Nice! Nano v2 Schematics](https://raw.githubusercontent.com/somik123/Adafruit_nRF52_Arduino_NiceNanoV2/refs/heads/main/img/schematic_nice_nano_v2.png)
+![nRF52840 Schematics](https://raw.githubusercontent.com/somik123/Adafruit_nRF52_Arduino_ProMicro/refs/heads/main/img/schematic_nRF52840.png)
 
